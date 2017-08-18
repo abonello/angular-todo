@@ -1,0 +1,19 @@
+{
+  "name": "angular-todo",
+  "version": "1.0.0",
+  "description": "A Todo-list using AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abonello/angular-todo.git"
+  },
+  "author": "Anthony Bonello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abonello/angular-todo/issues"
+  },
+  "homepage": "https://github.com/abonello/angular-todo#readme"
+}
