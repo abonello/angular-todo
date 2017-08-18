@@ -1,0 +1,17 @@
+{
+  "name": "angular-todo",
+  "description": "A Todo-list using AngularJS",
+  "main": "index.js",
+  "authors": [
+    "Anthony Bonello"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/abonello/angular-todo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
