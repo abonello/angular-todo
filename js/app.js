@@ -1,4 +1,4 @@
-angular.module('TodoApp', ['ngRoute', 'RouteControllers', 'Userservice']);
+angular.module('TodoApp', ['ngRoute', 'RouteControllers', 'UserService']);
 
 angular.module('TodoApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true); // Enable href routing without hashes
@@ -12,3 +12,5 @@ angular.module('TodoApp').config(function($locationProvider, $routeProvider) {
         controller: 'RegisterController'
     });
 });
+
+
