@@ -3,22 +3,16 @@ angular.module('RouteControllers', [])
         $scope.title= "Welcome to Angular Todo!";
     })
     .controller('RegisterController', function($scope, UserAPIService, store) { // there was $location too ??? 
-
         $scope.registrationUser = {};
         var URL = "https://morning-castle-91468.herokuapp.com/";
-
-        var authStorage = {
-            name: "StorageTest"
-        };
-
-        store.set('obj', authStorage);
 
         $scope.login = function() {
             UserAPIService.callAPI(URL + "accounts/api-token-auth/", $scope.data).then(function(results) {
                 $scope.token = results.data.token;
-                console.log($scope.token);
+                store.set('username', $scope.registrationUser.username);
+                store.set('authToken', $scope.token);
             }).catch(function(err) {
-                console.log(err);
+                console.log(err.data);
             });
         }
 
