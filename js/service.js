@@ -5,7 +5,7 @@ angular.module('UserService', [])
             callAPI: function(url, data) {
                 return $http.post(url, data);
             }
-        }
+        };
         return UserAPIService;
     });
 
@@ -25,7 +25,7 @@ angular.module('UserService', [])
 angular.module('TodoService', [])
     .factory('TodoAPIService', function($http) {
         TodoAPIService = {
-            getTodos: function(ursl, data, token) {
+            getTodos: function(url, data, token) {
                 var header = "Authorization: JWT " + token;
                 return $http.get(url, {params:{"username": data}}, header);
             },

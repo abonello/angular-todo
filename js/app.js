@@ -12,7 +12,11 @@ angular.module('TodoApp').config(function($locationProvider, $routeProvider) {
         controller: 'RegisterController'
     })
     .when('/todo', {
-        templateURL: 'templates/todo.html',
+        templateUrl: 'templates/todo.html',
         controller: 'TodoController'
+    })
+    .when('/todo/edit/:id', {
+        templateUrl: 'templates/edit-todo.html',
+        controller: 'EditTodoController'
     });
 });
