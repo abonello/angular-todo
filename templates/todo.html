@@ -1,4 +1,5 @@
 <div class="container">
+    <todo-table></todo-table>
     <table class="table">
         <thead>
             <tr>
@@ -15,13 +16,13 @@
                 <td>{{todo.status}}</td>
                 <td>
                     <button ng-click="editTodo(todo.id)"><span class="glyphicon glyphicon-edit"></span></button>
-                    <button ng-click="deleteTodo(todo.id"><span class="glyphicon glyphicon-trash"></span></button>
+                    <button ng-click="deleteTodo(todo.id)"><span class="glyphicon glyphicon-trash"></span></button>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#todo-modal">Create New TodoItem</button>
+    <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#todo-modal">Create New Todo Item</button>
 
     <div class="modal fade" id="todo-modal" tabindex="-1" role="dialog" arai-labelledby="todo-form-modal" aria-hidden="true">
         <div class="modal-dialog">
